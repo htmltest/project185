@@ -1,0 +1,521 @@
+*,
+*::before,
+*::after {outline:none; box-sizing:border-box}
+
+html {min-width:480px}
+
+body {min-width:480px; margin:0; padding:0; background:#091051 url(../images/bg.png) center top; color:#fff; -webkit-text-size-adjust:100%; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}
+.fonts-loaded body {font-family:Gilroy, sans-serif}
+
+::-ms-clear {display:none}
+
+.wrapper {width:100%; min-width:480px; position:relative; overflow:hidden}
+
+.container {max-width:1240px; margin:0 auto; padding:0 20px}
+.container::after {content:""; display:block; clear:both}
+
+.btn {display:inline-block; vertical-align:top; height:78px; padding:0 50px; color:#fff; text-decoration:none; font-weight:bold; font-size:48px; line-height:78px; letter-spacing:0; background:linear-gradient(0deg, #8200ce 0%, #d90091 100%); border-radius:4px}
+.btn:hover {background:linear-gradient(0deg, #ff4578 0%, #ff902f 100%)}
+
+@media screen and (max-width:1239px) {
+    .btn {height:48px; padding:0 16px; font-size:35px; line-height:48px}
+}
+
+header {position:absolute; left:0; top:0; right:0; z-index:20}
+
+@media screen and (max-width:1239px) {
+    header.header-center {padding:26px 0 0 0}
+}
+
+.logo {display:block; float:left; width:271px; height:54px; margin:32px 0 0 -40px; background:url(../images/logo.svg) no-repeat; background-size:100%}
+.slider-item-inverse .logo {background-image:url(../images/logo-inverse.svg)}
+
+@media screen and (max-width:1239px) {
+    .logo {float:right; width:154px; height:31px; margin:17px 2px 0 0}
+    header.header-center .logo {float:none; margin:0 auto}
+}
+
+.slider {font-size:0; line-height:0; letter-spacing:-1px; white-space:nowrap; position:relative; overflow:hidden; background:#020626}
+.slider-item {display:inline-block; vertical-align:top; width:100%}
+.slider-item-inner {height:793px; position:relative; overflow:hidden}
+.slider-item-bg {position:absolute; left:0; top:0; right:0; bottom:0; background:no-repeat center}
+.slider-item-bg-mobile {display:none}
+.slider-item-content {position:relative}
+.slider .slick-prev,
+.slider .slick-next {display:block; position:absolute; z-index:2; top:50%; width:24px; height:40px; border:none; border-radius:0; margin:-20px 0 0 0; padding:0; outline:none; -webkit-appearance:none; cursor:pointer; background:none}
+.slider .slick-prev {left:100px; background:url(../images/slick-prev.png) no-repeat}
+.slider .slick-next {right:100px; background:url(../images/slick-next.png) no-repeat}
+.slider .slick-prev:hover,
+.slider .slick-next:hover {background-position:left -40px}
+.slider .slick-prev.inverse {background-image:url(../images/slick-prev-inverse.png)}
+.slider .slick-next.inverse {background-image:url(../images/slick-next-inverse.png)}
+.slider .slick-dots {margin:0; padding:0; list-style:none; text-align:center; font-size:0; line-height:0; letter-spacing:-1px; position:absolute; left:0; bottom:27px; right:0}
+.slider .slick-dots li {margin:0 0 0 6px; padding:0; display:inline-block; vertical-align:top; position:relative}
+.slider .slick-dots li::before {display:none}
+.slider .slick-dots li:first-child {margin:0}
+.slider .slick-dots li button {display:block; position:relative; width:95px; height:6px; border-radius:3px; border:none; background:#959595; margin:0; padding:0; outline:none; -webkit-appearance:none; cursor:pointer; font-size:0; line-height:0; text-indent:100px}
+.slider .slick-dots li button:hover {background:linear-gradient(0deg, #ff4578 0%, #ff902f 100%)}
+.slider .slick-dots li button::after {content:""; display:block; position:absolute; left:0; top:0; width:0; bottom:0; border-radius:3px; background:#fbe44d}
+.slider .slick-dots li button.active {opacity:1}
+.slider .slick-dots li button.active::after {width:100%; transition:width 5s linear}
+
+@media screen and (max-width:1239px) {
+    .slider-item-inner {height:755px}
+    .slider-item-bg {display:none}
+    .slider-item-bg-mobile {display:block; position:absolute; left:0; top:0; right:0; bottom:0; background:no-repeat center bottom}
+    .slider .slick-dots {bottom:18px}
+    .slider .slick-dots li {margin:0 0 0 5px}
+    .slider .slick-dots li:first-child {margin:0}
+    .slider .slick-dots li button {width:69px; height:5px}
+}
+
+.slider-item-1 {float:left; text-align:center; margin:233px 0 0 -40px}
+.slider-item-1-title {font-weight:bold; font-size:78px; line-height:83px; letter-spacing:-0.01em; text-transform:uppercase}
+.slider-item-1-text {font-weight:500; font-size:27px; line-height:27px; letter-spacing:-0.025em; text-transform:uppercase; margin:24px 0 0 0}
+.slider-item-1-dates {margin:46px 0 0 0}
+.slider-item-1-dates span {display:inline-block; vertical-align:top; padding:0 33px; height:68px; border:3px solid #fff; border-radius:34px; font-weight:500; font-size:41px; line-height:62px; letter-spacing:0}
+
+@media screen and (max-width:1239px) {
+    .slider-item-1 {float:none; margin:0}
+    .slider-item-1-title {font-size:56px; line-height:59px; padding:82px 0 0 0}
+    .slider-item-1-text {font-size:20px; line-height:20px; letter-spacing:-0.027em; margin:15px 0 0 0}
+    .slider-item-1-dates {margin:0; position:absolute; left:0; top:656px; right:0}
+    .slider-item-1-dates span {height:46px; padding:0 24px; border-width:2px; font-size:31px; line-height:42px}
+}
+
+.slider-item-2 {margin:0 -40px}
+.slider-item-2-headers {font-weight:bold; font-size:47px; line-height:47px; color:#4825f4; padding:306px 0 0 0}
+.slider-item-2-headers::after {content:""; display:block; clear:both}
+.slider-item-2-header {float:right; letter-spacing:0.025em; padding:0 16px 0 0}
+.slider-item-2-header:first-child {float:left; letter-spacing:-0.025em}
+.slider-item-2-container {padding:62px 0 0 0}
+.slider-item-2-container::after {content:""; display:block; clear:both}
+.slider-item-2-left {float:left}
+.slider-item-2-right {float:right}
+.slider-item-2-logo {line-height:0}
+.slider-item-2-logo img {display:block; height:32px}
+.slider-item-2-container ul {margin:19px 0 0 -2px; padding:0; list-style:none; font-weight:500; font-size:24px; line-height:28px; letter-spacing:0; color:#d6d6d6}
+.slider-item-2-container ul li {margin:12px 0 0 0; padding:0}
+.slider-item-2-btn {margin:35px 0 0 0}
+.slider-item-2-btn .btn {height:69px; line-height:69px; padding:0 30px; font-size:36px}
+
+@media screen and (max-width:1239px) {
+    .slider-item-2 {margin:0}
+    .slider-item-2-headers {position:absolute; left:0; top:694px; right:0; font-size:22px; line-height:28px; padding:0; text-align:center}
+    .slider-item-2-header {float:none; letter-spacing:-0.025em; padding:0; display:inline}
+    .slider-item-2-header:first-child {float:none; display:inline}
+    .slider-item-2-container {padding:56px 0 0 14px}
+    .slider-item-2-left {float:none}
+    .slider-item-2-right {float:none; margin:18px 0 0 0}
+    .slider-item-2-logo img {height:34px}
+    .slider-item-2-container ul {margin:9px 0 0 0; font-size:17px; line-height:21px}
+    .slider-item-2-container ul li {margin:0}
+}
+
+.slider-item-3-btn {position:absolute; left:0; bottom:155px; right:0}
+.slider-item-3-btn .btn {height:69px; line-height:69px; padding:0 30px; font-size:36px}
+.slider-item-3-mobile {display:none}
+.slider-item-3 {position:absolute; left:0; bottom:0; right:0; background:#202124; height:123px; text-align:center; font-size:0; line-height:0; letter-spacing:-1px; padding:26px 0 0 0}
+.slider-item-3-item {display:inline-block; vertical-align:middle; font-size:24px; line-height:30px; letter-spacing:0; margin:0 0 0 55px}
+.slider-item-3-item:first-child {margin:0}
+.slider-item-3-item img {display:inline-block; vertical-align:middle; margin:-2px 20px 0 0}
+
+@media screen and (max-width:1239px) {
+    .slider-item-3-mobile {display:block; position:absolute; left:20px; top:190px; right:20px; font-size:14px; line-height:16px; font-weight:500; color:#000; border-bottom:1px solid #000; padding:0 0 14px 0; letter-spacing:0}
+    .slider-item-3-mobile-item {float:left; margin:0 0 0 23px; padding:0 0 0 23px; border-left:1px solid #8c8d8f}
+    .slider-item-3-mobile-item:first-child {margin:0; padding:0; border-left:none}
+    .slider-item-3 {height:56px; padding:16px 0 0 0; line-height:0; font-size:0; text-align:left}
+    .slider-item-3::before {content:""; display:block; position:absolute; left:124px; top:23px; right:20px; height:2px; background:#4b4c4d; border-radius:2px}
+    .slider-item-3-item {font-size:0; line-height:0; margin:0 0 0 17px}
+    .slider-item-3-item:first-child {margin:0 0 0 27px}
+    .slider-item-3-item img {margin:0; height:13px}
+}
+
+.links {margin:75px 30px 0 30px; font-size:0; line-height:0; letter-spacing:-1px; text-align:center}
+.links-inner {margin:0 -10px}
+.links-item {display:inline-block; vertical-align:top; width:33.33%; padding:0 10px}
+.links-item a {display:block; height:316px; border-radius:12px; text-decoration:none; position:relative; color:#fff}
+.links-item a::before {content:""; display:block; position:absolute; left:0; top:0; right:0; bottom:0; background:linear-gradient(0deg, #180570 0%, #6e3bff 100%); border-radius:12px; opacity:0.57}
+.links-item-img {position:absolute; left:0; bottom:0; right:0; text-align:center}
+.links-item-img-mobile {display:none}
+.links-item-newently {position:absolute; left:32px; top:0; display:table; width:122px}
+.links-item-newently span {display:table-cell; vertical-align:middle; height:46px; border-radius:0 0 8px 8px; background:linear-gradient(0deg, #fa3842 0%, #f93a45 100%); font-weight:800; font-size:25px; line-height:25px; letter-spacing:0}
+.links-item-discount {position:absolute; left:32px; top:0; display:table; width:106px}
+.links-item-discount span {display:table-cell; vertical-align:middle; height:56px; border-radius:0 0 8px 8px; background:linear-gradient(0deg, #fa3842 0%, #f93a45 100%); font-weight:800; font-size:25px; line-height:25px; letter-spacing:0}
+.links-item-discount em {display:block; font-style:normal; font-size:18px; line-height:18px; font-weight:500; text-transform:uppercase}
+.links-item-discount strong {font-size:20px; font-weight:bold}
+.links-item-title {display:table; width:100%; position:absolute; left:0; bottom:0}
+.links-item-title span {display:table-cell; vertical-align:middle; height:73px; border-radius:0 0 12px 12px; font-weight:bold; font-size:28px; line-height:28px; letter-spacing:0; background:linear-gradient(0deg, #6537e9 0%, #958dff 100%); transition:background 0.2s}
+.links-item a:hover .links-item-title span {background:linear-gradient(0deg, #ff4578 0%, #ff902f 100%)}
+
+@media screen and (max-width:1239px) {
+    .links {margin:0; text-align:left}
+    .links-inner {margin:0}
+    .links-item {display:block; width:auto; padding:0; margin:50px 0 0 0}
+    .links-item a {height:91px}
+    .links-item a::before {opacity:1; background:linear-gradient(0deg, #6733e9 0%, #968cff 100%)}
+    .links-item-img {display:none}
+    .links-item-img-mobile {display:block; position:absolute; left:15px; bottom:0; line-height:0}
+    .links-item-newently {left:174px; top:7px; width:auto}
+    .links-item-newently span {height:25px; border-radius:0 13px 13px 0; font-size:22px; line-height:25px; padding:0 10px}
+    .links-item-discount {left:174px; top:7px; width:auto}
+    .links-item-discount span {height:25px; border-radius:0 13px 13px 0; font-size:22px; line-height:25px; padding:0 10px}
+    .links-item-discount em {display:inline; font-size:22px; line-height:25px; margin:0 5px 0 0}
+    .links-item-discount strong {font-size:22px}
+    .links-item-title {display:block; width:auto; left:174px; right:0; bottom:auto; top:38px}
+    .links-item-title span {display:block; height:auto; border-radius:0; font-size:21px; line-height:22px; background:none}
+}
+
+.realme-gt {padding:56px 0 0 0}
+.realme-gt-img {line-height:0}
+.realme-gt-img img {display:block; width:100%; border-radius:12px 12px 0 0}
+.realme-gt-content {background:#fff; border-radius:0 0 12px 12px; padding:0 0 41px 0}
+.realme-gt-content::after {content:""; display:block; clear:both}
+.realme-gt-info {float:left; width:914px; padding:31px 0 0 50px}
+.realme-gt-title {font-weight:bold; font-size:44px; line-height:51px; color:#000}
+.realme-gt-title img {display:inline-block; vertical-align:top; height:51px; margin:-4px 28px 0 0}
+.realme-gt-props {display:table; margin:15px 0 0 -16px; border-collapse:separate; border-spacing:16px 7px}
+.realme-gt-props-row {display:table-row}
+.realme-gt-props-item {display:table-cell; vertical-align:middle; width:345px; border:2px solid #020626; font-weight:500; font-size:26px; line-height:29px; color:#000; letter-spacing:-0.025em; text-align:center; padding:5px 0}
+.realme-gt-buy {float:right; width:286px; padding:37px 0 0 0}
+.realme-gt-price {font-weight:bold; font-size:72px; line-height:72px; letter-spacing:-0.025em; color:#fa3e4a}
+.realme-gt-price span {font-size:40px}
+.realme-gt-priceold {font-weight:500; font-size:40px; line-height:40px; color:#4f4d4d; text-decoration:line-through; margin:-11px 0 0 0}
+.realme-gt-btn {margin:10px 0 0 0}
+
+@media screen and (max-width:1239px) {
+    .realme-gt {padding:36px 0 0 0; width:440px; margin:0 auto}
+    .realme-gt-img {height:219px; border-radius:12px 12px 0 0; position:relative; overflow:hidden}
+    .realme-gt-img img {display:block; width:auto; border-radius:0; height:219px; position:relative; left:50%; transform:translateX(-50%)}
+    .realme-gt-content {background:#fff; border-radius:0 0 12px 12px; padding:15px 15px 30px 15px}
+    .realme-gt-info {float:none; width:auto; padding:0}
+    .realme-gt-title {font-size:36px; line-height:36px}
+    .realme-gt-title img {display:block; height:30px; margin:0 0 7px 0}
+    .realme-gt-props {margin:9px -6px 0 -6px; border-collapse:separate; border-spacing:6px}
+    .realme-gt-props-item {width:50%; font-size:17px; line-height:17px; padding:2px; border-width:1px}
+    .realme-gt-buy {float:none; width:auto; padding:22px 0 0 0; margin:0 -15px 0 0}
+    .realme-gt-buy::after {content:""; display:block; clear:both}
+    .realme-gt-price {float:left; font-size:47px; line-height:47px; margin:3px 0 0 0}
+    .realme-gt-price span {font-size:26px}
+    .realme-gt-priceold {float:left; font-size:20px; line-height:20px; margin:24px 0 0 8px}
+    .realme-gt-btn {float:left; margin:0 0 0 15px}
+}
+
+.realme-8 {padding:145px 0 0 0}
+.realme-8-title {height:182px; background:#0a0014; position:relative; border-radius:12px; cursor:default}
+.realme-8-title-text {position:absolute; left:30px; top:-28px; font-weight:bold; font-size:243px; line-height:243px; color:#0a0014; text-shadow:0 2px 0 #d5bb71, 2px 0 0 #d5bb71, 0 -2px 0 #d5bb71, -2px 0 0 #d5bb71; text-transform:uppercase}
+.realme-8-title-photo {line-height:0; position:absolute; right:6px; bottom:0}
+
+@media screen and (max-width:1239px) {
+    .realme-8 {padding:97px 0 0 0}
+    .realme-8-title {height:73px; margin:0 -20px; border-radius:0}
+    .realme-8-title-text {left:20px; top:-10px; font-size:97px; line-height:97px; text-shadow:0 1px 0 #d5bb71, 1px 0 0 #d5bb71, 0 -1px 0 #d5bb71, -1px 0 0 #d5bb71}
+    .realme-8-title-photo {right:0}
+    .realme-8-title-photo img {width:130px}
+}
+
+.realme-8pro {margin:39px 0 0 0; height:640px; position:relative; background:url(../images/realme-8pro.jpg) no-repeat center; border-radius:16px}
+.realme-8pro-discount {position:absolute; left:618px; top:110px; height:55px; background:linear-gradient(0deg, #fa3842 0%, #f93a45 100%); padding:0 17px 0 11px; border-radius:0 28px 28px 0; color:#fff; font-weight:800; font-size:44px; line-height:55px; text-transform:uppercase}
+.realme-8pro-discount span {font-weight:600; font-size:36px; letter-spacing:-0.025em}
+.realme-8pro-discount strong {font-size:40px; font-weight:800}
+.realme-8pro-content {position:absolute; left:618px; top:198px}
+.realme-8pro-content-title {font-size:0; line-height:0; letter-spacing:-1px}
+.realme-8pro-content-title img {display:inline-block; vertical-align:top}
+.realme-8pro-logo {height:56px}
+.realme-8pro-infinity {height:37px; margin:13px 0 0 23px}
+.realme-8pro-text {font-size:30px; line-height:40px; font-weight:500; color:#f4fdff; margin:13px 0 0 0}
+.realme-8pro-buy-price {margin:67px 0 0 0; position:relative; overflow:hidden}
+.realme-8pro-buy-price-now {float:left; color:#fa3e4a; font-weight:bold; font-size:72px; line-height:72px; letter-spacing:-0.01em}
+.realme-8pro-buy-price-now span {font-size:40px}
+.realme-8pro-buy-price-old {float:left; margin:27px 0 0 16px; color:#868686; font-weight:500; font-size:40px; line-height:40px; letter-spacing:-0.01em; text-decoration:line-through}
+.realme-8pro-buy-btn {margin:-3px 0 0 0}
+.realme-8pro-slider {position:absolute; left:213px; top:195px; width:171px; font-size:0; line-height:0; letter-spacing:-1px; white-space:nowrap; overflow:hidden; border-radius:12px}
+.realme-8pro-slider.slick-initialized {overflow:visible}
+.realme-8pro-slider::after {content:""; display:block; position:absolute; left:11px; top:7px; width:11px; height:11px; background:url(../images/realme-8pro-slider.png) no-repeat; pointer-events:none}
+.realme-8pro-slider-item {display:inline-block; vertical-align:top; width:100%}
+.realme-8pro-slider-item-inner {height:375px; position:relative}
+.realme-8pro-slider-item-bg {position:absolute; left:0; top:0; bottom:0; right:0; background:no-repeat center; background-size:cover; border-radius:12px}
+.realme-8pro-slider .slick-dots {margin:0; padding:0; list-style:none; text-align:center; font-size:0; line-height:0; letter-spacing:-1px; position:absolute; left:0; bottom:-39px; right:0}
+.realme-8pro-slider .slick-dots li {margin:0 0 0 3px; padding:0; display:inline-block; vertical-align:top; position:relative}
+.realme-8pro-slider .slick-dots li::before {display:none}
+.realme-8pro-slider .slick-dots li:first-child {margin:0}
+.realme-8pro-slider .slick-dots li button {display:block; position:relative; width:48px; height:4px; border-radius:2px; border:none; background:#959595; margin:0; padding:0; outline:none; -webkit-appearance:none; cursor:pointer; font-size:0; line-height:0; text-indent:100px}
+.realme-8pro-slider .slick-dots li button::after {content:""; display:block; position:absolute; left:0; top:0; width:0; bottom:0; border-radius:2px; background:#fbe44d}
+.realme-8pro-slider .slick-dots li button.active::after {width:100%; transition:width 5s linear}
+
+@media screen and (max-width:1239px) {
+    .realme-8pro {margin:40px auto 0 auto; width:440px; height:609px; background:url(../images/realme-8pro-mobile.jpg) no-repeat center}
+    .realme-8pro-discount {left:0; top:30px; height:33px; padding:0 16px 0 6px; font-size:25px; line-height:33px}
+    .realme-8pro-discount span {font-size:25px}
+    .realme-8pro-discount strong {font-size:25px}
+    .realme-8pro-content {position:absolute; left:0; top:406px; right:0; text-align:center}
+    .realme-8pro-logo {height:35px}
+    .realme-8pro-infinity {height:24px; margin:10px 0 0 15px}
+    .realme-8pro-text {font-size:20px; line-height:24px; margin:12px 0 0 0}
+    .realme-8pro-buy {margin:17px 0 0 0}
+    .realme-8pro-buy-price {display:inline-block; vertical-align:top; text-align:left; margin:0}
+    .realme-8pro-buy-price-now {float:none; font-size:45px; line-height:45px}
+    .realme-8pro-buy-price-now span {font-size:26px}
+    .realme-8pro-buy-price-old {float:none; margin:-9px 0 0 0; font-size:20px; line-height:20px}
+    .realme-8pro-buy-btn {display:inline-block; vertical-align:top; margin:8px 0 0 16px}
+    .realme-8pro-slider {left:172px; top:134px; width:100px; border-radius:10px}
+    .realme-8pro-slider::after {left:6px; top:4px; width:6px; height:6px; background-size:100% 100%; border-radius:50%}
+    .realme-8pro-slider-item-inner {height:220px}
+    .realme-8pro-slider-item-bg {border-radius:10px}
+}
+
+.realme-8-item {margin:32px 0 0 0; height:640px; position:relative; background:url(../images/realme-8-item.jpg) no-repeat center; border-radius:16px}
+.realme-8-discount {position:absolute; left:107px; top:110px; height:55px; background:linear-gradient(0deg, #fa3842 0%, #f93a45 100%); padding:0 17px 0 11px; border-radius:0 28px 28px 0; color:#fff; font-weight:800; font-size:44px; line-height:55px; text-transform:uppercase}
+.realme-8-discount span {font-weight:600; font-size:36px; letter-spacing:-0.025em}
+.realme-8-discount strong {font-size:40px; font-weight:800}
+.realme-8-content {position:absolute; left:107px; top:198px}
+.realme-8-content-title {font-size:0; line-height:0; letter-spacing:-1px}
+.realme-8-content-title img {display:inline-block; vertical-align:top}
+.realme-8-logo {height:56px}
+.realme-8-text {font-size:30px; line-height:40px; font-weight:500; color:#f4fdff; margin:16px 0 0 0}
+.realme-8-buy-price {margin:34px 0 0 0; position:relative; overflow:hidden}
+.realme-8-buy-price-now {float:left; color:#fa3e4a; font-weight:bold; font-size:72px; line-height:72px; letter-spacing:-0.01em}
+.realme-8-buy-price-now span {font-size:40px}
+.realme-8-buy-price-old {float:left; margin:27px 0 0 10px; color:#868686; font-weight:500; font-size:40px; line-height:40px; letter-spacing:-0.01em; text-decoration:line-through}
+.realme-8-buy-btn {margin:2px 0 0 0}
+
+@media screen and (max-width:1239px) {
+    .realme-8-item {margin:30px auto 0 auto; width:440px; height:604px; background:url(../images/realme-8-item-mobile.jpg) no-repeat center}
+    .realme-8-discount {left:0; top:30px; height:33px; padding:0 16px 0 6px; font-size:25px; line-height:33px}
+    .realme-8-discount span {font-size:25px}
+    .realme-8-discount strong {font-size:25px}
+    .realme-8-content {position:absolute; left:0; top:391px; right:0; text-align:center}
+    .realme-8-logo {height:37px}
+    .realme-8-text {font-size:20px; line-height:24px; margin:12px 0 0 0}
+    .realme-8-buy {margin:17px 0 0 0}
+    .realme-8-buy-price {display:inline-block; vertical-align:top; text-align:left; margin:0}
+    .realme-8-buy-price-now {float:none; font-size:45px; line-height:45px}
+    .realme-8-buy-price-now span {font-size:26px}
+    .realme-8-buy-price-old {float:none; margin:-9px 0 0 0; font-size:20px; line-height:20px}
+    .realme-8-buy-btn {display:inline-block; vertical-align:top; margin:8px 0 0 16px}
+}
+
+.realme-8-video {margin:16px -10px 0 -10px; font-size:0; line-height:0; letter-spacing:-1px}
+.realme-8-video-item {display:inline-block; vertical-align:top; width:33.33%; padding:20px 10px 0 10px}
+.realme-8-video-item a {display:block; text-decoration:none; color:#fff}
+.realme-8-video-item-preview {height:212px; position:relative; background:no-repeat center; background-size:cover; border-radius:12px 12px 0 0}
+.realme-8-video-item-preview::before {content:""; display:block; position:absolute; left:0; top:0; right:0; bottom:0; border-radius:12px 12px 0 0; background:rgba(3, 3, 3, 0.4)}
+.realme-8-video-item-preview::after {content:""; display:block; width:48px; height:48px; background:url(../images/realme-8-video-icon.svg) no-repeat; background-size:100%; position:absolute; left:50%; top:50%; margin:-24px 0 0 -24px}
+.realme-8-video-item-title {display:table; width:100%}
+.realme-8-video-item-title span {display:table-cell; vertical-align:middle; height:70px; border-radius:0 0 12px 12px; font-weight:bold; font-size:34px; line-height:34px; letter-spacing:0; background:linear-gradient(0deg, #6537e9 0%, #958dff 100%); text-align:center}
+.realme-8-video-item a:hover .realme-8-video-item-title span {background:linear-gradient(0deg, #ff4578 0%, #ff902f 100%)}
+
+@media screen and (max-width:1239px) {
+    .realme-8-video {margin:15px -3px 0 -3px}
+    .realme-8-video-item {padding:6px 3px 0 3px}
+    .realme-8-video-item-preview {height:167px}
+    .realme-8-video-item-title span {height:43px; font-size:18px; line-height:16px; font-weight:600; padding:0 10px}
+}
+
+.realme-c {padding:201px 0 0 0}
+.realme-c-title {height:188px; background:#7189d3; position:relative; border-radius:12px; cursor:default}
+.realme-c-title-text {position:absolute; left:5px; top:-28px; font-weight:bold; font-size:243px; letter-spacing:-0.02em; line-height:243px; color:#7189d3; text-shadow:0 2px 0 #0d0152, 2px 0 0 #0d0152, 0 -2px 0 #0d0152, -2px 0 0 #0d0152; text-transform:uppercase}
+.realme-c-title-photo {line-height:0; position:absolute; right:-84px; bottom:0}
+.realme-c-title-bottom {position:absolute; left:0; bottom:0; right:0; height:21px; background:#2c50c5; border-radius:0 0 12px 12px; color:#b2caff; font-weight:600; font-size:14px; line-height:21px; letter-spacing:0.03em; text-align:center}
+
+@media screen and (max-width:1239px) {
+    .realme-c {padding:90px 0 0 0}
+    .realme-c-title {height:73px; margin:0 -20px; border-radius:0}
+    .realme-c-title-text {left:20px; top:-10px; font-size:97px; line-height:97px}
+    .realme-c-title-photo {right:-32px}
+    .realme-c-title-photo img {width:184px}
+    .realme-c-title-bottom {height:9px; border-radius:0; font-size:5.5px; line-height:9px; white-space:nowrap}
+}
+
+.realme-c25 {padding:63px 0 0 0}
+.realme-c25-img {line-height:0}
+.realme-c25-img img {display:block; width:100%; border-radius:12px 12px 0 0}
+.realme-c25-content {background:#fff; border-radius:0 0 12px 12px; padding:0 0 51px 0}
+.realme-c25-content::after {content:""; display:block; clear:both}
+.realme-c25-info {float:left; width:914px; padding:44px 0 0 74px}
+.realme-c25-title {font-size:0; line-height:0; letter-spacing:-1px}
+.realme-c25-title img {display:inline-block; vertical-align:top; height:48px}
+.realme-c25-title span {display:inline-block; vertical-align:top; height:55px; margin:2px 0 0 35px; border-radius:0 28px 28px 0; color:#fff; font-weight:800; font-size:44px; line-height:55px; padding:0 17px 0 11px; background:linear-gradient(0deg, #fa3842 0%, #f93a45 100%)}
+.realme-c25-title span strong {font-weight:800; font-size:40px}
+.realme-c25-title span em {font-style:normal; font-weight:600; font-size:36px; text-transform:uppercase}
+.realme-c25-text {font-size:30px; line-height:35px; color:#000; font-weight:500; margin:27px 0 0 0}
+.realme-c25-buy {float:right; width:286px; padding:37px 0 0 0}
+.realme-c25-price {font-weight:bold; font-size:72px; line-height:72px; letter-spacing:-0.025em; color:#fa3e4a}
+.realme-c25-price span {font-size:40px}
+.realme-c25-priceold {font-weight:500; font-size:40px; line-height:40px; color:#4f4d4d; text-decoration:line-through; margin:-11px 0 0 0}
+.realme-c25-btn {margin:10px 0 0 0}
+
+@media screen and (max-width:1239px) {
+    .realme-c25 {padding:0; width:440px; margin:30px auto 0 auto; position:relative}
+    .realme-c25-img {height:237px; border-radius:12px 12px 0 0; position:relative; overflow:hidden}
+    .realme-c25-img img {display:block; width:auto; border-radius:0; height:237px; position:relative; left:50%; transform:translateX(-50%)}
+    .realme-c25-content {padding:15px 0 30px 15px}
+    .realme-c25-info {float:none; width:auto; padding:0}
+    .realme-c25-title img {height:30px}
+    .realme-c25-title span {display:block; position:absolute; margin:0; left:0; top:30px; height:33px; padding:0 16px 0 6px; font-size:25px; line-height:33px}
+    .realme-c25-title span strong {font-size:25px}
+    .realme-c25-title span em {font-size:25px}
+    .realme-c25-text {margin:10px 0 0 0; font-size:20px; line-height:24px}
+    .realme-c25-buy {float:none; width:auto; padding:22px 0 0 0; margin:0 -15px 0 0}
+    .realme-c25-buy::after {content:""; display:block; clear:both}
+    .realme-c25-price {float:left; font-size:47px; line-height:47px; margin:3px 0 0 0}
+    .realme-c25-price span {font-size:26px}
+    .realme-c25-priceold {float:left; font-size:20px; line-height:20px; margin:24px 0 0 8px}
+    .realme-c25-btn {float:left; margin:0 0 0 15px}
+}
+
+.realme-c-video {position:relative; height:510px; margin:22px 0 0 0}
+.realme-c-video-link {display:block; border-radius:12px; position:absolute; left:0; top:0; right:0; bottom:0; color:#fff; text-align:center; text-decoration:none}
+.realme-c-video.start .realme-c-video-link {display:none}
+.realme-c-video-bg {position:absolute; left:0; top:0; right:0; bottom:0; border-radius:12px; background:url(../images/realme-c-video.jpg) no-repeat center; background-size:cover}
+.realme-c-video-bg::before {content:""; display:block; position:absolute; left:0; top:0; right:0; bottom:0; border-radius:12px; background:rgba(3, 3, 3, 0.4)}
+.realme-c-video-title {position:absolute; left:0; top:207px; right:0; font-weight:bold; font-size:30px; line-height:30px; letter-spacing:-0.025em}
+.realme-c-video-title::before {content:""; display:block; width:71px; height:71px; background:url(../images/realme-c-video.png) no-repeat; margin:0 auto 24px auto}
+.realme-c-video-link:hover .realme-c-video-title::before {background-position:left -71px}
+.realme-c-video-player {display:none; position:absolute; left:0; top:0; right:0; bottom:0}
+.realme-c-video.start .realme-c-video-player {display:block}
+.realme-c-video-player iframe {position:absolute; left:0; top:0; width:100%; height:100%}
+
+@media screen and (max-width:1239px) {
+    .realme-c-video {margin:18px auto 0 auto; width:440px; height:204px}
+    .realme-c-video-title {top:73px; font-size:18px; line-height:18px}
+    .realme-c-video-title::before {width:37px; height:37px; margin:0 auto 13px auto}
+}
+
+.realme-c21-list {margin:19px -15px 0 -15px; font-size:0; line-height:0; letter-spacing:-1px}
+.realme-c21-item {display:inline-block; vertical-align:top; width:50%; padding:30px 15px 0 15px}
+.realme-c21-item-inner {position:relative}
+.realme-c21-item-preview {height:486px; position:relative; border-radius:12px 12px 0 0; background:linear-gradient(0deg, #4343d2 0%, #9bcaff 100%); overflow:hidden}
+.realme-c21-item-preview img {display:block; position:absolute; left:50%; bottom:0; transform:translateX(-50%)}
+.realme-c21-item-preview-mobile {display:none}
+.realme-c21-item-content {padding:30px 0 30px 40px; background:#fff; border-radius:0 0 12px 12px}
+.realme-c21-item-title {font-size:0; line-height:0; letter-spacing:-1px}
+.realme-c21-item-title img {display:inline-block; vertical-align:top; height:43px}
+.realme-c21-item-title span {display:inline-block; vertical-align:top; margin:7px 0 0 17px; height:38px; padding:0 13px; border:1px solid #0635f8; border-radius:5px; font-weight:600; font-size:29px; line-height:36px; letter-spacing:-0.025em; color:#0635f8}
+.realme-c21-item-text {font-weight:500; font-size:30px; line-height:27px; letter-spacing:0; color:#040403; margin:10px 0 0 0}
+.realme-c21-item-buy {padding:20px 0 0 0}
+.realme-c21-item-buy::after {content:""; display:block; clear:both}
+.realme-c21-item-price {float:left; font-weight:bold; font-size:60px; line-height:60px; letter-spacing:-0.01em; color:#fa3e4a}
+.realme-c21-item-price span {font-size:36px}
+.realme-c21-item-priceold {float:left; margin:23px 0 0 10px; font-weight:500; font-size:32px; line-height:32px; color:#626262; text-decoration:line-through}
+.realme-c21-item-btn {float:left; margin:7px 0 0 15px}
+.realme-c21-item-btn .btn {height:54px; font-size:40px; line-height:54px; padding:0 23px}
+.realme-c21-item-discount {position:absolute; left:0; top:21px; height:55px; background:linear-gradient(0deg, #fa3842 0%, #f93a45 100%); padding:0 17px 0 11px; border-radius:0 28px 28px 0; color:#fff; font-weight:800; font-size:44px; line-height:55px; text-transform:uppercase; letter-spacing:0}
+.realme-c21-item-discount span {font-weight:600; font-size:36px; letter-spacing:-0.025em}
+.realme-c21-item-discount strong {font-size:40px; font-weight:800}
+
+@media screen and (max-width:1239px) {
+    .realme-c21-list {margin:30px 0 0 0}
+    .realme-c21-item {display:block; width:auto; padding:0; margin:11px 0 0 0}
+    .realme-c21-item-inner {height:250px}
+    .realme-c21-item-inner::after {content:""; display:block; clear:both}
+    .realme-c21-item-preview {display:none}
+    .realme-c21-item-preview-mobile {display:block; position:relative; float:left; width:203px; height:250px; border-radius:12px 0 0 12px; background:linear-gradient(0deg, #4343d2 0%, #9bcaff 100%); overflow:hidden}
+    .realme-c21-item-preview-mobile img {display:block; position:absolute; left:50%; top:58px; transform:translateX(-50%)}
+    .realme-c21-item-content {float:left; width:calc(100% - 203px); height:250px; padding:48px 0 0 22px; position:relative; border-radius:0 12px 12px 0}
+    .realme-c21-item-title img {height:28px}
+    .realme-c21-item-title span {position:absolute; left:22px; top:20px; margin:0; height:22px; padding:0 7px; font-size:17px; line-height:20px}
+    .realme-c21-item-discount {left:0; top:15px; height:24px; padding:0 16px 0 6px; font-size:18px; line-height:24px}
+    .realme-c21-item-discount span {font-size:18px}
+    .realme-c21-item-discount strong {font-size:18px}
+}
+
+.realme-c11 {margin:52px 0 0 0; height:514px; background:#fff; border-radius:12px; position:relative}
+.realme-c11-img {position:absolute; left:0; top:0; line-height:0}
+.realme-c11-content {position:absolute; left:614px; top:160px}
+.realme-c11-title {font-size:0; line-height:0; letter-spacing:-1px}
+.realme-c11-title img {display:inline-block; vertical-align:top; height:49px}
+.realme-c11-title span {display:inline-block; vertical-align:top; margin:10px 0 0 22px; height:36px; padding:0 10px; border:1px solid #020202; border-radius:5px; font-weight:600; font-size:33px; line-height:34px; letter-spacing:-0.01em; color:#020202}
+.realme-c11-text {font-weight:500; font-size:30px; line-height:27px; letter-spacing:0; color:#040403; margin:22px 0 0 0}
+.realme-c11-buy {padding:44px 0 0 0}
+.realme-c11-buy::after {content:""; display:block; clear:both}
+.realme-c11-price {float:left; font-weight:bold; font-size:72px; line-height:72px; letter-spacing:-0.01em; color:#fa3e4a}
+.realme-c11-price span {font-size:40px}
+.realme-c11-priceold {float:left; margin:29px 0 0 19px; font-weight:500; font-size:40px; line-height:40px; color:#4f4d4d; text-decoration:line-through}
+.realme-c11-btn {float:left; clear:left; margin:-3px 0 0 0}
+.realme-c11-discount {position:absolute; left:606px; top:77px; height:55px; background:linear-gradient(0deg, #fa3842 0%, #f93a45 100%); padding:0 17px 0 11px; border-radius:0 28px 28px 0; color:#fff; font-weight:800; font-size:44px; line-height:55px; text-transform:uppercase; letter-spacing:0}
+.realme-c11-discount span {font-weight:600; font-size:36px; letter-spacing:-0.025em}
+.realme-c11-discount strong {font-size:40px; font-weight:800}
+
+.aiot {padding:159px 0 0 0}
+.aiot-title {height:212px; background:#01122e; position:relative; border-radius:12px; cursor:default}
+.aiot-title-text {position:absolute; right:0; top:-40px; font-weight:bold; font-size:299px; letter-spacing:0; line-height:299px; color:#01122e; text-shadow:0 2px 0 #d5bb71, 2px 0 0 #d5bb71, 0 -2px 0 #d5bb71, -2px 0 0 #d5bb71; text-transform:uppercase}
+.aiot-title-photo {line-height:0; position:absolute; left:39px; top:-10px}
+
+.buds {margin:72px 0 0 0; border-radius:12px; height:436px; position:relative; background:#fff url(../images/buds-bg.png)}
+.buds-line {position:absolute; left:0; top:0; bottom:0; width:24px; border-radius:12px 0 0 12px; background:linear-gradient(0deg, #85ed9a 0%, #4091ff 100%)}
+.buds-photo {position:absolute; right:0; top:0; line-height:0}
+.buds-content {position:absolute; left:85px; top:105px}
+.buds-title {line-height:0}
+.buds-title img {height:45px}
+.buds-text {margin:17px 0 0 0; font-weight:500; font-size:30px; line-height:35px; letter-spacing:-0.025em; color:#000}
+.buds-buy {padding:38px 0 0 0}
+.buds-buy::after {content:""; display:block; clear:both}
+.buds-price {float:left; font-weight:bold; font-size:72px; line-height:72px; letter-spacing:-0.01em; color:#fa3e4a}
+.buds-price span {font-size:40px}
+.buds-btn {float:left; margin:11px 0 0 30px}
+.buds-btn .btn {height:54px; font-size:41px; line-height:54px; padding:0 24px}
+
+.aiot-list {margin:7px 0 0 0; display:table; width:100%; border-collapse:separate; border-spacing:30px}
+.aiot-list-row {display:table-row}
+.aiot-list-item {display:table-cell; vertical-align:top; width:50%; background:#fff; border-radius:12px; position:relative; padding:0 0 132px 0}
+.aiot-list-item-preview {line-height:0}
+.aiot-list-item-preview img {display:block; width:100%; border-radius:12px 12px 0 0}
+.aiot-list-item-title {text-align:center; font-weight:bold; font-size:48px; line-height:48px; color:#040403; padding:27px 0 0 0}
+.aiot-list-item-text {text-align:center; font-weight:500; font-size:30px; line-height:32px; color:#040403; padding:6px 10px 0 10px}
+.aiot-list-item-discount {position:absolute; left:0; top:27px; height:55px; background:linear-gradient(0deg, #fa3842 0%, #f93a45 100%); padding:0 17px 0 11px; border-radius:0 28px 28px 0; color:#fff; font-weight:800; font-size:44px; line-height:55px; text-transform:uppercase; letter-spacing:0}
+.aiot-list-item-discount span {font-weight:600; font-size:36px; letter-spacing:-0.025em}
+.aiot-list-item-discount strong {font-size:40px; font-weight:800}
+.aiot-list-item-buy {position:absolute; left:30px; bottom:40px}
+.aiot-list-item-price {float:left; font-weight:bold; font-size:56px; line-height:56px; letter-spacing:-0.01em; color:#fa3e4a}
+.aiot-list-item-price span {font-size:36px}
+.aiot-list-item-priceold {float:left; margin:23px 0 0 10px; font-weight:500; font-size:30px; line-height:30px; color:#626262; text-decoration:line-through}
+.aiot-list-item-btn {float:left; margin:5px 0 0 15px}
+.aiot-list-item-btn .btn {height:54px; font-size:40px; line-height:54px; padding:0 23px}
+
+.more-link {padding:132px 0 0 0}
+.more-link a {display:block; width:900px; margin:0 auto; height:123px; border:2px solid #fa3842; text-align:center; font-weight:bold; font-size:54px; line-height:119px; color:#fff; text-decoration:none; border-radius:12px}
+.more-link a:hover {border-color:#ff8f30}
+.more-link a::after {content:""; display:inline-block; vertical-align:middle; width:63px; height:63px; background:url(../images/more-link.png) no-repeat; margin:-4px 0 0 50px}
+.more-link a:hover::after {background-position:left -63px}
+
+@media screen and (max-width:1239px) {
+    .more-link {padding:66px 0 0 0}
+    .more-link a {width:440px; height:62px; font-size:26px; font-weight:600; line-height:58px}
+    .more-link a::after {width:32px; height:32px; margin:-4px 0 0 22px}
+}
+
+.social {text-align:center; padding:108px 0 0 0}
+.social-title {font-weight:bold; font-size:40px; line-height:40px}
+.social-links {font-size:0; line-height:0; letter-spacing:-1px; margin:64px 0 0 0}
+.social-links a {display:inline-block; vertical-align:top; margin:0 0 0 15px; padding:0 24px; border:2px solid #fa3842; border-radius:6px; height:90px; font-size:26px; line-height:86px; font-weight:bold; color:#fff; text-decoration:none; letter-spacing:0}
+.social-links a:hover {border-color:#ff8f30}
+.social-links a:first-child {margin:0}
+.social-links a img {vertical-align:middle; margin:-2px 20px 0 0}
+
+.disclaimer {margin:126px -999px 0 -999px; padding:69px 999px 75px 999px; background:#061a44; color:#fff; font-size:24px; line-height:42px}
+.disclaimer p {margin:0; padding:0}
+.copyrights {opacity:0.5; margin:40px 0 0 0}
+
+.up-link {display:none; width:50px; height:50px; position:fixed; right:68px; bottom:38px; z-index:98; background:url(../images/up-link.png) no-repeat; border-radius:50%; border:2px solid #fa3842; transition:background-color 0.2s}
+.up-link:hover {border-color:#ff8f30; background-position:left -46px}
+.up-link.visible {display:block}
+
+.window-open,
+.window-open body {overflow:hidden; position:fixed; left:0; top:0; right:0; bottom:0}
+
+.window {display:none; position:fixed; left:0; top:0; right:0; bottom:0; background:rgba(0, 0, 0, 0.75); z-index:99; text-align:center; overflow:auto}
+.window.visible {display:block}
+.window::before {content:""; display:inline-block; height:100%; vertical-align:middle}
+.window-container {display:inline-block; vertical-align:middle; position:relative; background:rgba(0, 0, 0, 0.85); border:3px solid #ff005a; border-radius:15px; margin:30px 0; width:1126px}
+.window-close {display:block; position:absolute; right:-32px; top:-29px; width:20px; height:20px; background:url(../images/window-close.png) no-repeat; transition:opacity 0.2s}
+.window-close:hover {opacity:0.8}
+
+.shop-list {text-align:center; font-size:0; line-height:0; letter-spacing:-1px; padding:30px 20px}
+.shop-list a {display:inline-block; vertical-align:middle; margin:20px; position:relative}
+.shop-list a::before {content:""; display:block; position:absolute; left:-3px; top:-3px; right:-3px; bottom:-3px; border:3px solid #ff005a; border-radius:3px; opacity:0; transition:opacity 0.2s}
+.shop-list a img {height:71px}
+.shop-list a:hover::before {opacity:1}
+
+.window-video-player {margin:20px; height:610px; position:relative}
+.window-video-player iframe {position:absolute; left:0; top:0; width:100%; height:100%}
