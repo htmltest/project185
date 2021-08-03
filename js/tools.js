@@ -12,7 +12,15 @@ $(document).ready(function() {
         speed: 1000,
         pauseOnFocus: false,
         pauseOnHover: false,
-        pauseOnDotsHover: false
+        pauseOnDotsHover: false,
+        responsive: [
+            {
+                breakpoint: 1239,
+                settings: {
+                    arrows: false
+                }
+            }
+        ]
     }).on('setPosition', function(event, slick) {
         var curIndex = $('.slider').slick('slickCurrentSlide');
         $('.slider .slick-dots li button.active').removeClass('active');
@@ -39,7 +47,7 @@ $(document).ready(function() {
         pauseOnDotsHover: false,
         responsive: [
             {
-                breakpoint: 1239,
+                breakpoint: 767,
                 settings: {
                     dots: false
                 }
