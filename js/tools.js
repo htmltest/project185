@@ -60,16 +60,52 @@ $(document).ready(function() {
 
 	$('body').on('click', '.realme-c-video-link', function(e) {
         $('.realme-c-video.start').removeClass('start');
-		$('.realme-c-video-player').html('');
+		$('.realme-c-video-player').html('<div id="realme-c-video-player"></div>');
 		$(this).parent().addClass('start');
-		$(this).parent().find('.realme-c-video-player').html('<iframe width="560" height="315" src="' + $(this).attr('href') + '?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+        var curVideoID = $(this).attr('data-video');
+
+        var player;
+        player = new YT.Player('realme-c-video-player', {
+            videoId: curVideoID,
+            playerVars: {
+                'autoplay' : 1,
+                'controls': 1,
+                'modestbranding': 1
+            },
+            events: {
+                'onReady': onPlayerReady
+            }
+        });
+
+        function onPlayerReady(event) {
+            event.target.playVideo();
+        }
+
 		e.preventDefault();
 	});
 
     $('body').on('click', '.window-link', function(e) {
         windowOpen($(this).attr('data-window'));
         if ($(this).hasClass('window-link-video')) {
-            $('.window-video-player').html('<iframe width="560" height="315" src="' + $(this).attr('href') + '?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+            $('.window-video-player').html('<div id="window-video-player"></div>');
+            var curVideoID = $(this).attr('data-video');
+
+            var player;
+            player = new YT.Player('window-video-player', {
+                videoId: curVideoID,
+                playerVars: {
+                    'autoplay' : 1,
+                    'controls': 1,
+                    'modestbranding': 1
+                },
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+
+            function onPlayerReady(event) {
+                event.target.playVideo();
+            }
         }
         e.preventDefault();
     });

@@ -54,6 +54,10 @@ header {position:absolute; left:0; top:0; right:0; z-index:20}
 .logo {display:block; float:left; width:271px; height:54px; margin:32px 0 0 -40px; background:url(../images/logo.svg) no-repeat; background-size:100%}
 .slider-item-inverse .logo {background-image:url(../images/logo-inverse.svg)}
 
+@media screen and (min-width:1240px) and (max-width:1440px) {
+    .logo {width:207px; height:41px; margin:22px 0 0 129px}
+}
+
 @media screen and (max-width:1239px) {
     .logo {float:right; width:202px; height:40px; margin:45px 6px 0 0}
     header.header-center .logo {float:none; margin:0 auto}
@@ -67,6 +71,7 @@ header {position:absolute; left:0; top:0; right:0; z-index:20}
 .slider-item {display:inline-block; vertical-align:top; width:100%}
 .slider-item-inner {height:793px; position:relative; overflow:hidden}
 .slider-item-bg {position:absolute; left:0; top:0; right:0; bottom:0; background:no-repeat center}
+.slider-item-bg-desktop {display:none}
 .slider-item-bg-tablet {display:none}
 .slider-item-bg-mobile {display:none}
 .slider-item-content {position:relative}
@@ -91,6 +96,24 @@ header {position:absolute; left:0; top:0; right:0; z-index:20}
 .slider .slick-dots li button::after {content:""; display:block; position:absolute; left:0; top:0; width:0; bottom:0; border-radius:3px; background:#fbe44d}
 .slider .slick-dots li button.active {opacity:1}
 .slider .slick-dots li button.active::after {width:100%; transition:width 5s linear}
+
+@media screen and (min-width:1240px) and (max-width:1440px) {
+    .slider-item-inner {height:500px}
+    .slider-item-bg {display:none}
+    .slider-item-bg-desktop {display:block; position:absolute; left:0; top:0; right:0; bottom:0; background:no-repeat center bottom}
+    .slider .slick-prev,
+    .slider .slick-next {width:18px; height:30px; margin:-15px 0 0 0}
+    .slider .slick-prev {left:30px; background:url(../images/slick-prev-desktop.png) no-repeat}
+    .slider .slick-next {right:30px; background:url(../images/slick-next-desktop.png) no-repeat}
+    .slider .slick-prev:hover,
+    .slider .slick-next:hover {background-position:left -30px}
+    .slider .slick-prev.inverse {background-image:url(../images/slick-prev-desktop-inverse.png)}
+    .slider .slick-next.inverse {background-image:url(../images/slick-next-desktop-inverse.png)}
+    .slider .slick-dots {bottom:15px}
+    .slider .slick-dots li {margin:0 0 0 8px}
+    .slider .slick-dots li:first-child {margin:0}
+    .slider .slick-dots li button {width:72px; height:3px; border-radius:0}
+}
 
 @media screen and (max-width:1239px) {
     .slider-item-inner {height:1024px}
@@ -117,6 +140,14 @@ header {position:absolute; left:0; top:0; right:0; z-index:20}
 .slider-item-1-text {font-weight:500; font-size:27px; line-height:27px; letter-spacing:-0.025em; text-transform:uppercase; margin:24px 0 0 0}
 .slider-item-1-dates {margin:46px 0 0 0}
 .slider-item-1-dates span {display:inline-block; vertical-align:top; padding:0 33px; height:68px; border:3px solid #fff; border-radius:34px; font-weight:500; font-size:41px; line-height:62px; letter-spacing:0}
+
+@media screen and (min-width:1240px) and (max-width:1440px) {
+    .slider-item-1 {margin:124px 0 0 100px}
+    .slider-item-1-title {font-size:60px; line-height:63px; letter-spacing:0}
+    .slider-item-1-text {font-size:18px; line-height:19px; letter-spacing:-0.02em; margin:18px 0 0 0}
+    .slider-item-1-dates {margin:30px 0 0 0}
+    .slider-item-1-dates span {height:59px; font-size:30px; line-height:57px; border-width:1px; padding:0 30px}
+}
 
 @media screen and (max-width:1239px) {
     .slider-item-1 {float:none; margin:0}
@@ -148,6 +179,18 @@ header {position:absolute; left:0; top:0; right:0; z-index:20}
 .slider-item-2-container ul li {margin:12px 0 0 0; padding:0}
 .slider-item-2-btn {margin:35px 0 0 0}
 .slider-item-2-btn .btn {height:69px; line-height:69px; padding:0 30px; font-size:36px}
+
+@media screen and (min-width:1240px) and (max-width:1440px) {
+    .slider-item-2 {margin:0 140px}
+    .slider-item-2-headers {font-size:30px; line-height:40px; padding:237px 0 0 0}
+    .slider-item-2-header {padding:0}
+    .slider-item-2-container {padding:23px 0 0 0}
+    .slider-item-2-logo img {height:21px}
+    .slider-item-2-container ul {margin:13px 0 0 -2px; font-size:16px; line-height:20px; font-weight:normal; color:#fff}
+    .slider-item-2-container ul li {margin:6px 0 0 0}
+    .slider-item-2-btn {margin:13px 0 0 0}
+    .slider-item-2-btn .btn {height:50px; line-height:50px; padding:0; font-size:24px; width:125px; text-align:center}
+}
 
 @media screen and (max-width:1239px) {
     .slider-item-2 {margin:0}
@@ -183,6 +226,15 @@ header {position:absolute; left:0; top:0; right:0; z-index:20}
 .slider-item-3-item {display:inline-block; vertical-align:middle; font-size:24px; line-height:30px; letter-spacing:0; margin:0 0 0 55px}
 .slider-item-3-item:first-child {margin:0}
 .slider-item-3-item img {display:inline-block; vertical-align:middle; margin:-2px 20px 0 0}
+
+@media screen and (min-width:1240px) and (max-width:1440px) {
+    .slider-item-3-btn {left:160px; bottom:89px}
+    .slider-item-3-btn .btn {height:50px; line-height:50px; padding:0; font-size:24px; width:125px; text-align:center}
+    .slider-item-3 {height:76px; padding:18px 0 0 0}
+    .slider-item-3-item {font-size:18px; line-height:25px; margin:0 0 0 40px}
+    .slider-item-3-item:first-child {margin:0}
+    .slider-item-3-item img {height:25px; margin:-2px 10px 0 0}
+}
 
 @media screen and (max-width:1239px) {
     .slider-item-3-mobile {display:block; position:absolute; left:17px; top:213px; right:17px; font-size:24px; line-height:28px; font-weight:500; color:#000; border-bottom:1px solid #000; padding:0 0 11px 0; letter-spacing:0}
